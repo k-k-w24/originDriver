@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.transportcompany.app-merged_res-35:/layout_item_delivery.xml.flat",
+        "source": "com.transportcompany.app-main-37:/layout/item_delivery.xml"
+    },
+    {
+        "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/layout_activity_login.xml.flat",
+        "source": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/menu_main_menu.xml.flat",
+        "source": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-main-37:/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/layout_item_delivery.xml.flat",
+        "source": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-main-37:/layout/item_delivery.xml"
+    },
+    {
+        "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/layout_activity_delivery_detail.xml.flat",
+        "source": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-main-37:/layout/activity_delivery_detail.xml"
+    },
+    {
+        "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/menu_delivery_list_menu.xml.flat",
+        "source": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-main-37:/menu/delivery_list_menu.xml"
+    },
+    {
+        "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/drawable_status_background.xml.flat",
+        "source": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-main-37:/drawable/status_background.xml"
+    },
+    {
+        "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/layout_activity_delivery_list.xml.flat",
+        "source": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-main-37:/layout/activity_delivery_list.xml"
+    }
+]

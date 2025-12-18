@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">運送管理アプリ</string>
+    <string name="login_title">ログイン</string>
+    <string name="username">ユーザー名</string>
+    <string name="password">パスワード</string>
+    <string name="login_button">ログイン</string>
+    <string name="delivery_list_title">配送一覧</string>
+    <string name="delivery_detail_title">配送詳細</string>
+    <string name="package_number">荷物番号</string>
+    <string name="recipient_name">受取人名</string>
+    <string name="delivery_address">配送先住所</string>
+    <string name="delivery_status">配送状況</string>
+    <string name="delivery_date">配送日時</string>
+    <string name="driver_name">ドライバー名</string>
+    <string name="update_status">状況更新</string>
+    <string name="status_pending">未配送</string>
+    <string name="status_in_transit">配送中</string>
+    <string name="status_delivered">配送完了</string>
+    <string name="status_failed">配送失敗</string>
+    <string name="search_hint">荷物番号で検索</string>
+    <string name="filter">フィルター</string>
+    <string name="refresh">更新</string>
+</resources>
+

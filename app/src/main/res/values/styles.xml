@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TransportCompanyApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.TransportCompanyApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
+
