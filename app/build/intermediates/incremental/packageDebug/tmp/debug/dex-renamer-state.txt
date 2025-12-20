@@ -1,4 +1,4 @@
-#Fri Dec 19 08:07:40 JST 2025
+#Sat Dec 20 16:47:35 JST 2025
 base.0=/Users/k_kato0804/projectMain/project2025/AndroidStuio/AppOrigin_202512/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/k_kato0804/projectMain/project2025/AndroidStuio/AppOrigin_202512/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/k_kato0804/projectMain/project2025/AndroidStuio/AppOrigin_202512/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex

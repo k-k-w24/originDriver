@@ -53,11 +53,15 @@ class DeliveryDetailActivity : AppCompatActivity() {
             }
 
             try {
+                binding.backButton.setOnClickListener {
+                    finish()
+                }
+                
                 binding.updateStatusButton.setOnClickListener {
                     showStatusUpdateDialog()
                 }
             } catch (e: Exception) {
-                Log.e(TAG, "Error setting up update button", e)
+                Log.e(TAG, "Error setting up buttons", e)
             }
 
             Log.d(TAG, "onCreate completed successfully")
@@ -162,6 +166,9 @@ class DeliveryDetailActivity : AppCompatActivity() {
                 }
                 updateDeliveryStatus(newStatus)
             }
+            .setNegativeButton("キャンセル") { dialog, _ ->
+                dialog.dismiss()
+            }
             .show()
     }
 
@@ -193,6 +200,9 @@ class DeliveryDetailActivity : AppCompatActivity() {
                 finish()
             }
             .setNegativeButton("このまま") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .setNeutralButton("キャンセル") { dialog, _ ->
                 dialog.dismiss()
             }
             .show()

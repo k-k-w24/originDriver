@@ -1,7 +1,7 @@
 [
     {
-        "merged": "com.transportcompany.app-merged_res-35:/layout_item_delivery.xml.flat",
-        "source": "com.transportcompany.app-main-37:/layout/item_delivery.xml"
+        "merged": "com.transportcompany.app-merged_res-35:/layout_activity_delivery_detail.xml.flat",
+        "source": "com.transportcompany.app-main-37:/layout/activity_delivery_detail.xml"
     },
     {
         "merged": "/Users/k_kato0804/.gradle/daemon/9.0-milestone-1/com.transportcompany.app-merged_res-35:/layout_activity_main.xml.flat",

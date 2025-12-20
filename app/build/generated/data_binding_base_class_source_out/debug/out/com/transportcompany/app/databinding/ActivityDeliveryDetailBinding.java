@@ -23,6 +23,9 @@ public final class ActivityDeliveryDetailBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
+  public final MaterialButton backButton;
+
+  @NonNull
   public final TextView deliveryAddressText;
 
   @NonNull
@@ -56,12 +59,14 @@ public final class ActivityDeliveryDetailBinding implements ViewBinding {
   public final MaterialButton updateStatusButton;
 
   private ActivityDeliveryDetailBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull TextView deliveryAddressText, @NonNull TextView deliveryDateText,
-      @NonNull TextView driverNameText, @NonNull CardView infoCard, @NonNull TextView notesText,
-      @NonNull TextView packageNumberText, @NonNull TextView phoneNumberText,
-      @NonNull TextView recipientNameText, @NonNull TextView statusText, @NonNull Toolbar toolbar,
+      @NonNull MaterialButton backButton, @NonNull TextView deliveryAddressText,
+      @NonNull TextView deliveryDateText, @NonNull TextView driverNameText,
+      @NonNull CardView infoCard, @NonNull TextView notesText, @NonNull TextView packageNumberText,
+      @NonNull TextView phoneNumberText, @NonNull TextView recipientNameText,
+      @NonNull TextView statusText, @NonNull Toolbar toolbar,
       @NonNull MaterialButton updateStatusButton) {
     this.rootView = rootView;
+    this.backButton = backButton;
     this.deliveryAddressText = deliveryAddressText;
     this.deliveryDateText = deliveryDateText;
     this.driverNameText = driverNameText;
@@ -102,6 +107,12 @@ public final class ActivityDeliveryDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.backButton;
+      MaterialButton backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
+        break missingId;
+      }
+
       id = R.id.deliveryAddressText;
       TextView deliveryAddressText = ViewBindings.findChildViewById(rootView, id);
       if (deliveryAddressText == null) {
@@ -168,9 +179,10 @@ public final class ActivityDeliveryDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDeliveryDetailBinding((CoordinatorLayout) rootView, deliveryAddressText,
-          deliveryDateText, driverNameText, infoCard, notesText, packageNumberText, phoneNumberText,
-          recipientNameText, statusText, toolbar, updateStatusButton);
+      return new ActivityDeliveryDetailBinding((CoordinatorLayout) rootView, backButton,
+          deliveryAddressText, deliveryDateText, driverNameText, infoCard, notesText,
+          packageNumberText, phoneNumberText, recipientNameText, statusText, toolbar,
+          updateStatusButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
