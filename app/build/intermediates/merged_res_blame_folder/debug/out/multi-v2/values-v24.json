@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.transportcompany.app-mergeDebugResources-33:/values-v24/values-v24.xml",
+            "outputFile": "com.transportcompany.app-mergeDebugResources-73:/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/k_kato0804/.gradle/caches/9.0-milestone-1/transforms/818440df55c5b22950fdce982f2f1b19/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",

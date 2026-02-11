@@ -21,5 +21,8 @@
     <string name="search_hint">荷物番号で検索</string>
     <string name="filter">フィルター</string>
     <string name="refresh">更新</string>
+    <string name="scan_barcode">バーコード読み取り</string>
+    <string name="scan_instruction">バーコードまたはQRコードを枠内に合わせてください</string>
+    <string name="branch_selection_title">支店選択</string>
+    <string name="select_branch_instruction">支店を選択してください</string>
 </resources>
-

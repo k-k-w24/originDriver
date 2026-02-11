@@ -28,14 +28,18 @@ public final class ActivityDeliveryListBinding implements ViewBinding {
   public final MaterialButton refreshButton;
 
   @NonNull
+  public final MaterialButton scanBarcodeButton;
+
+  @NonNull
   public final Toolbar toolbar;
 
   private ActivityDeliveryListBinding(@NonNull CoordinatorLayout rootView,
       @NonNull RecyclerView deliveryRecyclerView, @NonNull MaterialButton refreshButton,
-      @NonNull Toolbar toolbar) {
+      @NonNull MaterialButton scanBarcodeButton, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.deliveryRecyclerView = deliveryRecyclerView;
     this.refreshButton = refreshButton;
+    this.scanBarcodeButton = scanBarcodeButton;
     this.toolbar = toolbar;
   }
 
@@ -78,6 +82,12 @@ public final class ActivityDeliveryListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scanBarcodeButton;
+      MaterialButton scanBarcodeButton = ViewBindings.findChildViewById(rootView, id);
+      if (scanBarcodeButton == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
@@ -85,7 +95,7 @@ public final class ActivityDeliveryListBinding implements ViewBinding {
       }
 
       return new ActivityDeliveryListBinding((CoordinatorLayout) rootView, deliveryRecyclerView,
-          refreshButton, toolbar);
+          refreshButton, scanBarcodeButton, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

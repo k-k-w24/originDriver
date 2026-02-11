@@ -1,9 +1,11 @@
 package com.transportcompany.api.config
 
+import com.transportcompany.api.model.Branch
 import com.transportcompany.api.model.Delivery
 import com.transportcompany.api.model.DeliveryStatus
 import com.transportcompany.api.model.User
 import com.transportcompany.api.model.UserRole
+import com.transportcompany.api.repository.BranchRepository
 import com.transportcompany.api.repository.DeliveryRepository
 import com.transportcompany.api.repository.UserRepository
 import org.springframework.boot.CommandLineRunner
@@ -12,11 +14,52 @@ import java.util.Date
 
 @Component
 class DataInitializer(
+    private val branchRepository: BranchRepository,
     private val userRepository: UserRepository,
     private val deliveryRepository: DeliveryRepository
 ) : CommandLineRunner {
     
     override fun run(vararg args: String?) {
+        // 初期支店データを作成
+        val branch1 = if (branchRepository.findByCode("TOKYO") == null) {
+            branchRepository.save(
+                Branch(
+                    code = "TOKYO",
+                    name = "東京支店",
+                    address = "東京都千代田区1-1-1",
+                    phoneNumber = "03-1234-5678"
+                )
+            )
+        } else {
+            branchRepository.findByCode("TOKYO")!!
+        }
+        
+        val branch2 = if (branchRepository.findByCode("OSAKA") == null) {
+            branchRepository.save(
+                Branch(
+                    code = "OSAKA",
+                    name = "大阪支店",
+                    address = "大阪府大阪市1-2-3",
+                    phoneNumber = "06-1234-5678"
+                )
+            )
+        } else {
+            branchRepository.findByCode("OSAKA")!!
+        }
+        
+        val branch3 = if (branchRepository.findByCode("YOKOHAMA") == null) {
+            branchRepository.save(
+                Branch(
+                    code = "YOKOHAMA",
+                    name = "横浜支店",
+                    address = "神奈川県横浜市1-3-5",
+                    phoneNumber = "045-1234-5678"
+                )
+            )
+        } else {
+            branchRepository.findByCode("YOKOHAMA")!!
+        }
+        
         // 初期ユーザーを作成
         if (userRepository.findByUsername("admin") == null) {
             userRepository.save(
@@ -24,7 +67,8 @@ class DataInitializer(
                     username = "admin",
                     password = "admin123",
                     name = "管理者",
-                    role = UserRole.ADMIN
+                    role = UserRole.ADMIN,
+                    branch = branch1
                 )
             )
         }
@@ -35,7 +79,8 @@ class DataInitializer(
                     username = "driver1",
                     password = "driver123",
                     name = "佐藤一郎",
-                    role = UserRole.DRIVER
+                    role = UserRole.DRIVER,
+                    branch = branch1
                 )
             )
         }
