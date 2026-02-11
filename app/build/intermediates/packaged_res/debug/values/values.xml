@@ -15,6 +15,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">運送管理アプリ</string>
+    <string name="branch_selection_title">支店選択</string>
     <string name="delivery_address">配送先住所</string>
     <string name="delivery_date">配送日時</string>
     <string name="delivery_detail_title">配送詳細</string>
@@ -28,7 +29,10 @@
     <string name="password">パスワード</string>
     <string name="recipient_name">受取人名</string>
     <string name="refresh">更新</string>
+    <string name="scan_barcode">バーコード読み取り</string>
+    <string name="scan_instruction">バーコードまたはQRコードを枠内に合わせてください</string>
     <string name="search_hint">荷物番号で検索</string>
+    <string name="select_branch_instruction">支店を選択してください</string>
     <string name="status_delivered">配送完了</string>
     <string name="status_failed">配送失敗</string>
     <string name="status_in_transit">配送中</string>
